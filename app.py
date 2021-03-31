@@ -38,8 +38,8 @@ def handle_message(event):
    # member_ids_res = line_bot_api.get_group_member_ids(<group_id>)
 
     # Send To Line
-    print get_message
-    print get_id
+    print (get_message)
+    print (get_id)
     reply = TextSendMessage(text=f"{get_message}")
     line_bot_api.reply_message(event.reply_token, reply)
     
